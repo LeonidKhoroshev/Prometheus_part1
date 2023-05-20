@@ -2,53 +2,37 @@
 
 ---
 
-### Задание 1. Установите Zabbix Server с веб-интерфейсом
+### Задание 1. Установите Prometheus.
 
-![alt text](https://github.com/LeonidKhoroshev/hw-08-03/blob/main/zabbix1.png)
+![alt text](https://github.com/LeonidKhoroshev/hw-08-04/blob/main/prometheus1.png)
 ---
 
-### Задание 2 Добавьте в Zabbix два хоста и задайте им имена <фамилия и инициалы-1> и <фамилия и инициалы-2>.
+### Задание 2. Установите Node Exporter..
 
-![alt text](https://github.com/LeonidKhoroshev/hw-08-03/blob/main/zabbix2.png)
----
-
-
-### Задание 4. Создайте свой кастомный дашборд.
-
-![alt text](https://github.com/LeonidKhoroshev/hw-08-03/blob/main/zabbix3.png)
+![alt text](https://github.com/LeonidKhoroshev/hw-08-04/blob/main/prometheus2.png)
 ---
 
 
-### Задание 5. Создайте карту и расположите на ней два своих хоста
+### Задание 3. Подключите Node Exporter к серверу Prometheus.
 
-![alt text](https://github.com/LeonidKhoroshev/hw-08-03/blob/main/zabbix4.1.png)
+Конфигурация интерфейса
 
-![alt text](https://github.com/LeonidKhoroshev/hw-08-03/blob/main/zabbix4.2.png)
+![alt text](https://github.com/LeonidKhoroshev/hw-08-04/blob/main/prometheus3.1.png)
+
+
+Эндпойнты
+
+![alt text](https://github.com/LeonidKhoroshev/hw-08-04/blob/main/prometheus3.2.png)
 ---
 
 
-### Задание 6. Создайте UserParameter на bash и прикрепите его к созданному вами ранее шаблону. Он должен вызывать скрипт, который:
+### Задание 4. Установите Grafana.
 
-при получении 1 будет возвращать ваши ФИО,
+![alt text](https://github.com/LeonidKhoroshev/hw-08-04/blob/main/prometheus4.png)
+---
 
-при получении 2 будет возвращать текущую дату.
 
-Код скрипта:
+### Задание 5. Интегрируйте Grafana и Prometheus.
 
-#!/bin/bash
-
-read a
-
-if [[ "$a" -eq 1 ]]; then
-
-    echo "Khoroshev Leonid"
-
-elif [[ "$a" -eq 2 ]]; then
-
-    echo $(date '+%Y-%m-%d')
-
-else
-
-    echo "I don't know what is it"
-
-fi
+![alt text](https://github.com/LeonidKhoroshev/hw-08-04/blob/main/prometheus5.png)
+---
